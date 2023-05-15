@@ -56,13 +56,46 @@ export default function Statistics() {
             legend: {
               show: false,
             },
-            xaxis: {
-              categories: tempxaxis,
+            yaxis: {
+              //  categories: [0, 25, 50, 75, 100],
               labels: {
+                show: true,
                 style: {
                   color: 'black',
                   fontSize: '13px',
-                  fontWeight: 'bold',
+                  //    fontWeight: 'bold',
+                },
+              },
+              title: {
+                text: 'Duration',
+                style: {
+                  color: 'black',
+                  fontSize: '16px',
+                  fontFamily: 'Helvetica, Arial, sans-serif',
+                  fontWeight: 600,
+                  cssClass: 'apexcharts-xaxis-title',
+                  marginRight : 20
+                },
+              },
+            },
+            xaxis: {
+              categories: tempxaxis,
+              labels: {
+                show: true,
+                style: {
+                  color: 'black',
+                  fontSize: '13px',
+                  //    fontWeight: 'bold',
+                },
+              },
+              title: {
+                text: 'Activities',
+                style: {
+                  color: 'black',
+                  fontSize: '16px',
+                  fontFamily: 'Helvetica, Arial, sans-serif',
+                  fontWeight: 600,
+                  cssClass: 'apexcharts-xaxis-title',
                 },
               },
             },
